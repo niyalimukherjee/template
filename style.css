@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:wght@500&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&family=Yuji+Hentaigana+Akari&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("bg_image.jpg");
+    background-repeat: no-repeat;
+    color: white;
+}
+.brand-title{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    text-decoration: none;
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    display: block;
+}
+.toggle-button{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius:10px;
+}
+.button1{
+    margin-right: 4rem;
+    width: 10rem;
+    /* border-radius: 50rem; */
+}
+.container{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.bg{
+    background-image: url("bg_image.jpg") ;
+    background-repeat: no-repeat;
+
+}
+p{
+     font-family: 'Cantarell', sans-serif;
+     color: white;
+}
+h1{
+    
+    font-family: 'Cantarell', sans-serif;
+    color: white !important;
+}
+h1 span{
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+@media(max-width:600px)
+{
+    .toggle-button{
+        display: flex;    }
+        .navbar-links{
+            display: none;
+            width: 100%;
+        }
+        .navbar{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .navbar-links ul{
+            width: 100%;
+            flex-direction: column;
+        }
+        .navbar-links li{
+            text-align: center;
+        }
+        .navbar-links li a{
+            padding: .5rem 1rem;
+        }
+        .navbar-links.active{
+            display: flex;
+        }
+        .button1{
+           
+           margin-top: 1.5rem;
+        }
+        .container{
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+        /* .navbar-links li a{
+            text-decoration: none;
+            display: flex;
+            align-items: flex-start;
+            display: block;
+        } */
+}
