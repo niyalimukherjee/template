@@ -54,7 +54,10 @@ body{
 .button1{
     margin-right: 4rem;
     width: 10rem;
-    /* border-radius: 50rem; */
+   
+}
+#button2{
+    border-radius: 10rem;
 }
 .container{
   
@@ -108,17 +111,21 @@ h1 span{
             display: flex;
         }
         .button1{
-           
+           margin-right: 1rem;
            margin-top: 1.5rem;
         }
+       #buttons{
+           display: flex;
+           flex-direction: row;
+       }
         .container{
             margin-left: 10rem;
             margin-right: 10rem;
         }
-        /* .navbar-links li a{
+        .navbar-links li a{
             text-decoration: none;
             display: flex;
             align-items: flex-start;
             display: block;
-        } */
+        }
 }
